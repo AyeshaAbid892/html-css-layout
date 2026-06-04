@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopamp! – Clothing Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION BAR COMPONENT ── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" aria-label="Shopamp Home">shopamp!</a>
+      
+      <nav class="nav-links" id="main-menu" aria-label="Main Navigation">
+        <a href="#" class="nav-link active" aria-current="page">HOME</a>
+        
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="demo-dropdown">
+            LIVE DEMO <i class="fas fa-caret-down" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-menu" id="demo-dropdown" role="menu">
+            <a href="#" role="menuitem">CLOTHING STORE</a>
+            <a href="#" role="menuitem">FOOD STORE</a>
+          </div>
+        </div>
+        
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="blocks-dropdown">
+            LIVE DEMO BLOCKS <i class="fas fa-caret-down" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-menu" id="blocks-dropdown" role="menu">
+            <a href="#" role="menuitem">Header</a>
+            <a href="#" role="menuitem">Content</a>
+            <a href="#" role="menuitem">Shop</a>
+            <a href="#" role="menuitem">Slider</a>
+          </div>
+        </div>
+        
+        <a href="#" class="btn-buy">Buy Now</a>
+      </nav>
+      
+      <button type="button" class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="main-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MAIN CONTENT LAYER ── -->
+  <main>
+
+    <!-- Hero Hero Layer -->
+    <section class="hero" id="home" aria-label="Welcome Banner">
+      <div class="hero-overlay"></div>
+      <img src="Image.jpg" alt="Fashionable woman holding shopping bags against clean backdrop" class="hero-bg" loading="eager" />
+      <div class="hero-content">
+        <h1 class="hero-title">Clothing<br />Store</h1>
+        <p class="hero-subtitle">Clothing Website Template</p>
+      </div>
+    </section>
+
+    <!-- About Cards Section -->
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 class="section-title" id="about-title">About Us</h2>
+        <div class="cards-grid three-col">
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80" alt="Clothing neatly hanging on commercial store racks" loading="lazy" />
+            </div>
+            <p class="card-label">Prices</p>
+            <h3 class="card-heading">Best prices</h3>
+            <p class="card-text">In our store, you would find the best prices in the city. Every month we provide our customers with discounts and sales on certain categories of goods.</p>
+            <a href="#" class="card-link" aria-label="Learn more about our pricing structure and seasonal discounts">Learn more <span aria-hidden="true">&gt;</span></a>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80" alt="Latest dynamic clothing trends on display" loading="lazy" />
+            </div>
+            <p class="card-label">Trends</p>
+            <h3 class="card-heading">Newest trends</h3>
+            <p class="card-text">We always follow trends and try to collect the latest and most fashionable clothes in our shop. We have magazines, in which you can check out styles and colors.</p>
+            <a href="#" class="card-link" aria-label="Learn more about our premium clothing trends">Learn more <span aria-hidden="true">&gt;</span></a>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&q=80" alt="Curated previous season outfits arrangement" loading="lazy" />
+            </div>
+            <p class="card-label">Collections</p>
+            <h3 class="card-heading">Previous collections</h3>
+            <p class="card-text">It's possible to buy the best pieces of clothes from previous collections with huge discounts. Every Saturday we provide our customers with sales.</p>
+            <a href="#" class="card-link" aria-label="Learn more about purchasing from previous collections">Learn more <span aria-hidden="true">&gt;</span></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Flash Promotion Layer -->
+   <!-- SALE PROMOTIONAL BANNER SECTION -->
+        <section class="sale-promo-banner" aria-label="Limited Flash Sale Countdown">
+            <div class="promo-bg-overlay"></div>
+            <div class="promo-content-block">
+                <span class="promo-top-tag">WE ARE GLAD TO SEE YOU</span>
+                <h2 class="promo-main-title">SALE TO -70% LAST 2 DAYS</h2>
+                <div class="promo-action-box">
+                    <a href="#" class="btn-watch-now">Watch Now</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Feature Matrix Section -->
+    <section class="features section-pad bg-light" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="features-layout">
+          <div class="features-left">
+            <p class="features-label">FEATURES</p>
+            <h2 class="features-title" id="features-title">Features Our<br />Store</h2>
+          </div>
+          <div class="features-right">
+            
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-tag" aria-hidden="true"></i></div>
+              <div>
+                <h3>Sale</h3>
+                <p>Check out our best sales and discounts.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-truck" aria-hidden="true"></i></div>
+              <div>
+                <h3>Delivery</h3>
+                <p>We provide delivery within 3 days.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+              <div>
+                <h3>Our Clients</h3>
+                <p>Our clients are always satisfied with our work.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-thumbs-up" aria-hidden="true"></i></div>
+              <div>
+                <h3>Warranty</h3>
+                <p>You can bring back the clothes within 1 month.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid System -->
+    <section class="products section-pad" id="products" aria-labelledby="products-main-title">
+      <div class="container">
+        <h2 class="section-title" id="products-main-title">Our Product</h2>
+        <div class="cards-grid two-col">
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="Image 2.jpg" alt="Premium tailored formal shirt" loading="lazy" />
+              <div class="product-hover-overlay">
+                <span class="overlay-text">SHIRT</span>
+              </div>
+            </div>
+            <h3 class="product-name">SHIRT</h3>
+            <p class="product-price">$ 69.99</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="Image 3.jpg" alt="Light breathable casual summer shirt" loading="lazy" />
+              <div class="product-hover-overlay">
+                <span class="overlay-text">LIGHT SHIRT</span>
+              </div>
+            </div>
+            <h3 class="product-name">LIGHT SHIRT</h3>
+            <p class="product-price">$ 89.99</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="Image 4.jpg" alt="Modern slim tailored outdoor jacket" loading="lazy" />
+              <div class="product-hover-overlay">
+                <span class="overlay-text">JACKET</span>
+              </div>
+            </div>
+            <h3 class="product-name">JACKET</h3>
+            <p class="product-price">$ 129.99</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="Image 5.jpg" alt="Classic rugged durable denim shirt" loading="lazy" />
+              <div class="product-hover-overlay">
+                <span class="overlay-text">DENIM SHIRT</span>
+              </div>
+            </div>
+            <h3 class="product-name">DENIM SHIRT</h3>
+            <p class="product-price">$ 179.99</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Secure Interactive Newsletter Section -->
+  <div align="center">
+    <section class="modern-newsletter-section" aria-label="Newsletter Subscription">
+      <div class="modern-newsletter-wrapper">
+        <h2 class="modern-newsletter-title">Be the first to know?</h2>
+        
+        <div class="modern-newsletter-meta">
+          <span class="modern-sub-label">Subscribe Now</span>
+          <strong class="modern-note">* Invite a friend and get a discount - 10%</strong>
+        </div>
+        
+        <form class="modern-newsletter-form" action="#" method="POST" aria-label="Newsletter Subscription Form">
+          <div class="modern-input-group">
+            <label for="newsletter-secure-email" class="modern-sr-only">Email Address</label>
+            <i class="fas fa-envelope" aria-hidden="true"></i> 
+            <input 
+              type="email" 
+              id="newsletter-secure-email"
+              placeholder="Enter your email here..." 
+              required 
+              autocomplete="email"
+            />
+          </div>
+          <button type="submit" class="modern-btn-submit">SUBSCRIBE</button>
+        </form>
+      </div>
+      </div>
+    </section>
+
+    <!-- Category Showcase Banners -->
+    <section class="shop-banners section-pad" aria-label="Product Categories Showcase">
+      <div class="container">
+        <div class="banners-grid">
+
+          <div class="banner-card">
+            <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=700&q=80" alt="Women's modern collection style apparel preview" loading="lazy" />
+            <div class="banner-overlay">
+              <p class="banner-items">item!</p>
+              <a href="#" class="btn-buynow" aria-label="Buy items from women's lookbook now">BUY NOW</a>
+            </div>
+          </div>
+
+          <div class="banner-card">
+            <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=700&q=80" alt="Curated top-tier boutique catalog highlights" loading="lazy" />
+            <div class="banner-overlay">
+              <p class="banner-items">item!</p>
+              <a href="#" class="btn-buynow" aria-label="Buy items from curated catalog now">BUY NOW</a>
+            </div>
+          </div>
+
+          <div class="banner-card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=700&q=80" alt="Trendy comfortable everyday streetwear styles" loading="lazy" />
+            <div class="banner-overlay">
+              <p class="banner-items">2em!</p>
+              <a href="#" class="btn-buynow" aria-label="Buy items from urban collection now">BUY NOW</a>
+            </div>
+          </div>
+
+          <div class="banner-card">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=700&q=80" alt="High-end luxury premium retail fashion lines" loading="lazy" />
+            <div class="banner-overlay">
+              <p class="banner-items">2em!</p>
+              <a href="#" class="btn-buynow" aria-label="Buy items from luxury collection now">BUY NOW</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News Blog Layout -->
+    <section class="news section-pad bg-light" id="news" aria-labelledby="news-main-title">
+      <div class="container">
+        <h2 class="section-title" id="news-main-title">Latest News</h2>
+        <div class="cards-grid three-col news-grid">
+
+          <article class="news-card">
+            <div class="news-img-wrap">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80" alt="Corporate office operations and fashion studio workflow coverage" loading="lazy" />
+            </div>
+            <div class="news-body">
+              <h3>Work Mode</h3>
+              <a href="#" class="news-link" aria-label="Read complete editorial on Work Mode">Learn More</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80" alt="Professional runway models displaying premium seasonal apparel lines" loading="lazy" />
+            </div>
+            <div class="news-body">
+              <h3>New Collections</h3>
+              <a href="#" class="news-link" aria-label="Read complete editorial on New Collections">Learn More</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-img-wrap">
+              <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&q=80" alt="Brick and mortar high-end luxury retail showroom showroom layout" loading="lazy" />
+            </div>
+            <div class="news-body">
+              <h3>Our Stores</h3>
+              <a href="#" class="news-link" aria-label="Read complete editorial on Our Stores">Learn More</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Gallery Grid Layer -->
+    <section class="instagram section-pad" aria-label="Social Media Catalog Feed">
+      <div class="container">
+        
+        <div class="gallery-header">
+          <p class="collection-label">LAST COLLECTION</p>
+          <a href="#" class="collection-learn" aria-label="Learn more about our last seasonal collection items">LEARN MORE</a>
+        </div>
+
+        <div class="insta-grid">
+
+          <div class="insta-item">
+            <img src="Image 6.jpg" alt="Instagram portfolio item detailing seasonal accessory design" loading="lazy" />
+            <div class="insta-overlay">
+              <div class="social-actions-wrap">
+                <a href="#" class="social-icon" aria-label="Share this post on Facebook" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="Share this post on Twitter" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="View original item on Instagram" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="insta-item">
+            <img src="Image 8.jpg" alt="Instagram portfolio item featuring high-end dynamic outerwear styles" loading="lazy" />
+            <div class="insta-overlay">
+              <div class="social-actions-wrap">
+                <a href="#" class="social-icon" aria-label="Share this post on Facebook" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="Share this post on Twitter" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="View original item on Instagram" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="insta-item">
+            <img src="Image 9.jpg" alt="Instagram portfolio item outlining minimal structured summer collection options" loading="lazy" />
+            <div class="insta-overlay">
+              <div class="social-actions-wrap">
+                <a href="#" class="social-icon" aria-label="Share this post on Facebook" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="Share this post on Twitter" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="View original item on Instagram" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="insta-item">
+            <img src="Image 10.jpg" alt="Instagram portfolio item emphasizing street-wear retail apparel design metrics" loading="lazy" />
+            <div class="insta-overlay">
+              <div class="social-actions-wrap">
+                <a href="#" class="social-icon" aria-label="Share this post on Facebook" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="Share this post on Twitter" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="View original item on Instagram" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="insta-item">
+            <img src="Image 7.jpg" alt="Instagram portfolio item displaying aesthetic knitwear design coordination" loading="lazy" />
+            <div class="insta-overlay">
+              <div class="social-actions-wrap">
+                <a href="#" class="social-icon" aria-label="Share this post on Facebook" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="Share this post on Twitter" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="View original item on Instagram" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="insta-item">
+            <img src="Image 11.jpg" alt="Instagram portfolio item showing luxury tailored suits and custom fashion fabrics" loading="lazy" />
+            <div class="insta-overlay">
+              <div class="social-actions-wrap">
+                <a href="#" class="social-icon" aria-label="Share this post on Facebook" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="Share this post on Twitter" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="social-icon" aria-label="View original item on Instagram" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessible Testimonial Slider Grid -->
+    <section class="testimonials section-pad bg-light" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 class="section-title" id="testimonials-title">Testimonials</h2>
+        <div class="testimonial-wrapper">
+          <button type="button" class="testi-arrow testi-prev" id="testiPrev" aria-label="Go to Previous Testimonial"><i class="fas fa-circle" aria-hidden="true"></i></button>
+          
+          <div class="testimonial-slide active" role="group" aria-roledescription="slide" aria-label="1 of 2">
+            <div class="testi-avatar">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&q=80" alt="Headshot portrait of Markus Grecho" loading="lazy" />
+            </div>
+            <p class="testi-name">Markus Grecho</p>
+            <p class="testi-role">Clients</p>
+            <blockquote class="testi-quote-wrap">
+              <p class="testi-text">"I'm constantly surprised by this place. The hand-crafted clothes are incredible as the customer service is above the same level. You need to go right here, not just for the selection and the curated clothing, yet because Lesley truly appreciates her consumers and wants to go that extra mile to ensure they're entirely pleased."</p>
+            </blockquote>
+          </div>
+          
+          <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="2 of 2">
+            <div class="testi-avatar">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&q=80" alt="Headshot portrait of Sara Mills" loading="lazy" />
+            </div>
+            <p class="testi-name">Sara Mills</p>
+            <p class="testi-role">Clients</p>
+            <blockquote class="testi-quote-wrap">
+              <p class="testi-text">"I've been shopping here for two years now and the quality never disappoints. The staff is incredibly knowledgeable and helpful. The selection is curated with such care – I always find something unique."</p>
+            </blockquote>
+          </div>
+          
+          <button type="button" class="testi-arrow testi-next" id="testiNext" aria-label="Go to Next Testimonial"><i class="fas fa-circle" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Geographic Location & Split Contact Segment -->
+    <section class="location section-pad" id="location" aria-labelledby="location-heading">
+      <div class="container">
+        <h2 id="location-heading" class="section-title">Our Location</h2>
+        
+        <div class="contact-split-header">
+          <div class="header-left-column">
+            <div class="contact-item">
+              <span class="contact-label" id="contact-email-label">Email</span>
+              <a href="mailto:company@mobirise.com" class="contact-link" aria-labelledby="contact-email-label">company@mobirise.com</a>
+            </div>
+          </div>
+          <div class="header-right-column">
+            <div class="contact-item">
+              <span class="contact-label" id="contact-phone-label">Phone</span>
+              <a href="tel:+57312355324" class="contact-link" aria-labelledby="contact-phone-label">+573 1235 5324</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="location-grid">
+          <div class="location-photo">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80" alt="Physical store front showroom brick and mortar interior retail layout" loading="lazy" />
+          </div>
+          <div class="location-map">
+            <iframe
+              src="https://maps.google.com/maps?q=Manhattan,New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              style="border:0; width:100%; height:100%; display:block;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Interactive Store Location Geographic Map"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── GLOBAL SITE FOOTER COMPONENT ── -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      
+      <div class="footer-about">
+        <a href="#" class="footer-logo" aria-label="Shopamp Home Footer Reference">shopamp!</a>
+        <p class="footer-desc">Launched in 2012, the store uses a wide range of clothing to fit any kind of female's special sense of design. Our clothes also accessories are thoroughly curated to offer our consumers with the most up to date fashions. To maintain our clients in vogue we post new arrivals daily, along with deal stylist selects to aid any kind of unclear customers. Our store is a fashionista's best place to produce the ideal closet. Check out Clothing Website Template.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Follow our store brand page on Facebook" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" class="footer-social-btn" aria-label="Follow our store official channel on Twitter" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="footer-social-btn" aria-label="Follow our store retail timeline on Instagram" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h2 class="footer-links-title">News</h2> 
+        <ul>
+          <li><a href="#">Trends</a></li>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">Discounts</a></li>
+          <li><a href="#">Best Proposals</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h2 class="footer-links-title">Shop</h2>
+        <ul>
+          <li><a href="#">Best jeans in town</a></li>
+          <li><a href="#">New skirts collection</a></li>
+          <li><a href="#">Tuesday discounts</a></li>
+          <li><a href="#">Clothes for pregnant</a></li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mobirise – Clothing Website Template – All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- ── CORE ARCHITECTURAL SCRIPTS ── -->
+  <script>
+    // Sticky navbar dynamic behavior logic
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile Hamburger dynamic trigger handling
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('main-menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Accessible Dropdown Focus / ARIA Toggle Control System
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !isExpanded);
+      });
+      
+      // Close dropdown if user clicks away
+      document.addEventListener('click', (e) => {
+        if (!toggle.contains(e.target)) {
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    // Testimonial interactive system mechanics
+    const slides = document.querySelectorAll('.testimonial-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach(s => s.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    document.getElementById('testiNext').addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    });
+
+    document.getElementById('testiPrev').addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    });
+
+    // Micro-interaction viewport tracking systems (Intersection Observer)
+    const animatedEls = document.querySelectorAll(
+      '.card, .product-card, .news-card, .insta-item, .feature-item, .banner-card'
+    );
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+    animatedEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
